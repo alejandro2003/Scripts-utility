@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 
@@ -35,7 +34,7 @@ echo "please, put your github username"
 read user
 echo "please, put your github password"
 read pass
-curl -L --retry 20^C-retry-delay 2 -O https://raw.githubusercontent.com/alejandro2003/DjangoBlog/master/README.md -u "$user":"$pass"
+curl -L --retry 20 --retry-delay 2 -O https://raw.githubusercontent.com/alejandro2003/DjangoBlog/master/README.md -u "$user":"$pass"
 chmod +x prepare_on_premise.sh
 cd paas-dcos-installer/
 pwd
